@@ -119,7 +119,9 @@ body {
     .filter-filtres {
         list-style: none;
         margin: 0;
-        padding: 0;
+        display: flex;
+        gap: 2em;
+        justify-content: space-around;
     }
 
     .filter-item {
@@ -175,7 +177,8 @@ body {
         top: 280px;
         display: flex;
         border: none;
-        justify-content: space-around;
+        justify-content: flex-start;
+        margin: 20px;
     }
 
     .filter-title {
@@ -184,10 +187,6 @@ body {
         line-height: 21px;
         text-align: center;
         margin: 0;
-    }
-
-    .info-container {
-        margin-left: 1%;
     }
 
     .filter-input {
@@ -203,6 +202,25 @@ body {
         display: flex;
         align-items: center;
         padding: inherit;
+    }
+    .info-container {
+        display: flex;
+        font-weight: 400;
+        margin: 30px 0 30px 2%;
+        align-items: center;
+    }
+    .icone-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #0065FC;
+        width: 24px;
+        height: 24px;
+        border: solid 1px #deebff;
+        border-radius: 50%;
+    }
+    .info{
+        padding-left: 15px
     }
 
 }
