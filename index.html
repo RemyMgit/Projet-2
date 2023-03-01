@@ -1,29 +1,87 @@
 <!DOCTYPE html>
- <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <link href="style.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" crossorigin="anonymous">
-    </head>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous">
+</head>
+
+<body>
     <header>
-        
-         <div id="Booki_Logo"> <img src="Images Booki/logo/Booki.png" alt="Le logo Booki"></div>
-            <nav id="menu">
-                <a href="#hebergements-a-marseille" class="hebact">Hébergements</a>
-                <a href="#activites-a-marseille" class="hebact">Activités</a>
-            </nav>
-    
+
+        <a href="#"> <img class="Booki-log" src="Images Booki/logo/Booki.png" alt="Le logo Booki"></a>
+        <div class="menu">
+            <a href="#hebergements" class="hebact">Hébergements</a>
+            <a href="#activites" class="hebact">Activités</a>
+        </div>
+        </div>
     </header>
-    <body>
-    <h1>  </h1>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <i class="fa-solid fa-dog"></i>
-    <i class="fa-solid fa-chart-line"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-info"></i>
-    <i class="fa-solid fa-person"></i>
+    <div class="title_container">
+        <h1 class="title_main">Trouvez votre Hébergement pour des vacances de rêve</h1>
+        <p class="paragraph">
+            En plein centre ville ou en pleine nature
+        </p>
+    </div>
+    <!-- ++++ RECHERCHE ++++ -->
+    <div class="search">
+        <div class="btn-recherche">
+            <span class="pin-icone"><i class="fas fa-map-marker-alt"></i></span>
+            <form method="POST" action="#" class="recherche">
+                <input class="btn-recherche__input" type="search" name="recherche" placeholder="Marseille, France"
+                    autofocus>
+                <input class="btn-recherche__input__submit" type="button" value="Rechercher">
+            </form>
+        </div>
+    </div>
+    <!------FILTRE------>
+    <div class="filter">
+        <nav class="filter-container">
+            <h3 class="filter-title">Filtres</h3>
+            <ul class="filter-filtres">
+            <!------FILTRE ECONOMIQUE------>
+            <li class="filter-item">
+                
+                <button class="filter-item-eco" method="POST" action="#">
+                    <span class="filter-icone"><i class="fas fa-money-bill-wave"></i></span>
+                    <input class="filter-input" type="text" name="economique" value="Économique" disabled="disabled">
+                </button>
+            </li>
+            <!-----FILTRE FAMILIAL------>
+            <li class="filter-item">
+                <button class="filter-item-famille" method="POST" action="#">
+                    <span class="filter-icone"><i class="fas fa-person"></i></span>
+                    <input class="filter-input" type="text" name="familiale" value="Familial" disabled="disabled">
+                </button>
+            </li>
+            <!------FILTRE ROMANTIQUE------>
+            <li class="filter-item">
+                <button class="filter-item-romantique" method="POST" action="#">
+                    <span class="filter-icone"><i class="fas fa-heart"></i></span>
+                    <input class="filter-input" type="text" name="romantique" value="Romantique" disabled="disabled">
+                </button>
+            </li>
+            <!------FILTRE ANIMAUX----->
+            <li class="filter-item">
+                <button class="filter-item-animaux" method="POST" action="#">
+                    <span class="filter-icone"><i class="fas fa-dog"></i></span>
+                    <input class="filter-input" type="text" name="animaux" value="Animaux autorisés" disabled="disabled">
+                </button>
+            </li>
+        </ul>
+       </nav>
+        <!-----INFORMATION----->
+        <div class="info-container">
+            <span class="icone-info"><i class="fas fa-info"></i></span>
+            <p class="info">
+                Plus de 500 logements sont disponibles dans cette ville
+            </p>
+        </div>
+    </div>
 </body>
+
 </html>
