@@ -13,7 +13,6 @@
 }
 
 body {
-    padding: 0px 50px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -58,9 +57,9 @@ header {
     text-align: center;
 }
 
-@media only screen and (min-width: 520px) and (max-width: 992px) {}
+@media only screen and (min-width: 768px) and (max-width: 992px) {}
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 768px) {
     header {
         flex-flow: wrap;
     }
@@ -157,11 +156,41 @@ header {
     padding-left: 1.6%;
 }
 
-.btn-recherche__input__submit_mobile {
-    display: none;
+@media only screen and (min-width : 767.98px) {
+    .btn-recherche__input__submit_mobile {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .btn-recherche__input__submit_mobile {
+        height: 19px;
+        width: 19px;
+        border: none;
+        border-radius: 15px;
+        background-color: #0065fc;
+        color: #f2f2f2;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .btn-recherche__input__submit {
+        display: none;
+    }
+
+    .btn-recherche {
+        justify-content: center;
+    }
 }
 
 /*  ----FILTRE-----  */
+.filter {
+    display: flex;
+    flex-flow: column;
+}
+
 .filter-title {
     display: flex;
     align-items: center;
@@ -177,6 +206,7 @@ header {
     display: flex;
     padding-left: 10px;
     gap: 1em;
+    flex-flow: wrap;
 }
 
 
@@ -229,6 +259,7 @@ header {
     display: flex;
     border: none;
     margin: 20px;
+    flex-flow: wrap;
 }
 
 .filter-input {
@@ -269,7 +300,15 @@ header {
 .info {
     padding-left: 15px
 }
-
+@media only screen and (max-width: 768px) {
+.filter-title {
+    margin: inherit;
+}
+.info-container{
+    margin-top: 110px
+}
+}
+/* ----- Hebergement ----- */
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -320,7 +359,7 @@ header {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 871px;
 }
 
 .hebergements-cards {
@@ -340,11 +379,12 @@ header {
 .hebergements-cards .card {
     display: flex;
     flex-flow: wrap;
-    width: 250px;
+    width: 240px;
     height: 207px;
     margin-top: 30px;
 }
-.hebergements-cards .card-content{
+
+.hebergements-cards .card-content {
     display: flex;
     flex-direction: column;
     height: -webkit-fill-available;
@@ -355,6 +395,7 @@ header {
     margin-top: 10px;
     margin-bottom: 4px;
 }
+
 .hebergements-cards .card-subtitle {
     margin: 0;
 }
@@ -403,6 +444,15 @@ header {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+.afficher{
+    padding-top: 15px;
+}
+.afficher-plus {
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
 
 
 
@@ -446,11 +496,26 @@ header {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .hebergements-and-populaires{
+        flex-direction: column-reverse;
+    }
+    .populaires-cards{
+        flex-direction: column;
+    }
+    .populaires-cards .card {
+        width: 100%;
+    }
+    .hebergements-cards .card {
+        width: 100%;
+    }
+    .hebergements-cards img {
+        width: 100%;
+    }
     /* ... */
 }
 
 @media only screen and (min-width: 992px) {}
 
-@media only screen and (min-width: 520px) and (max-width: 992px) {}
+@media only screen and (min-width: 768px) and (max-width: 992px) {}
 
-@media only screen and (max-width: 520px) {}
+@media only screen and (max-width: 768px) {}
