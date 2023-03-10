@@ -16,6 +16,10 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    max-width: 1440px;
+}
+@media only screen and (min-width: 1440px){
+    body{margin: auto;}
 }
 
 body>*:not(header) {
@@ -514,8 +518,3 @@ header {
     /* ... */
 }
 
-@media only screen and (min-width: 992px) {}
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {}
-
-@media only screen and (max-width: 768px) {}
