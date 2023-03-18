@@ -101,7 +101,7 @@ header {
 .pin-icone {
     background-color: #d9d9d9;
     height: 50px;
-    width: 50px;
+    padding: 0 1em;
     border-radius: 15px 0px 0px 15px;
     display: flex;
 }
@@ -181,6 +181,8 @@ header {
         font-size: 18px;
         padding: 15px;
         text-align: center;
+        position: relative;
+        right: 10px;
     }
 
     .btn-recherche__input__submit {
@@ -188,7 +190,7 @@ header {
     }
 
     .btn-recherche {
-        justify-content: center;
+        padding-left: 2em;
     }
 
     .title_container {
@@ -243,6 +245,7 @@ header {
     font-size: 17px;
     display: flex;
     height: 48px;
+    align-items: center;
 
 }
 
@@ -310,14 +313,17 @@ header {
 .info {
     padding-left: 15px
 }
-@media (max-width: 1024px){
-    .filter-container{
+
+@media (max-width: 1024px) {
+    .filter-container {
         flex-direction: column;
     }
-    .filter-title{
+
+    .filter-title {
         margin-bottom: 2%;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .filter-title {
         margin: inherit;
@@ -326,13 +332,15 @@ header {
     .filter-item-eco,
     .filter-item-famille,
     .filter-item-romantique,
-    .filter-item-pepites { 
+    .filter-item-pepites {
         width: 100%;
     }
-    .filter-item{
+
+    .filter-item {
         width: 45%;
     }
-    .filter-input{
+
+    .filter-input {
         font-size: 14px;
     }
 
@@ -530,7 +538,7 @@ header {
 @media (max-width: 767.98px) {
     .hebergements-and-populaires {
         flex-direction: column-reverse;
-        
+
     }
 
     .populaires-cards {
@@ -548,13 +556,16 @@ header {
     .hebergements-cards img {
         width: 100%;
     }
-    .populaires{
+
+    .populaires {
         margin-top: 0;
     }
-    .hebergements-and-populaires section{
+
+    .hebergements-and-populaires section {
         border-radius: 0;
     }
-    .hebergements{
+
+    .hebergements {
         background-color: white;
     }
 
@@ -565,9 +576,11 @@ header {
 #activity {
     padding: 3% 2em 3% 2em;
 }
-.activite_title{
+
+.activite_title {
     padding-left: 1.6%;
 }
+
 .cards-activity-content {
     display: flex;
     gap: 2em;
@@ -603,37 +616,47 @@ a:link {
     text-decoration: none;
     color: black;
 }
-.link { color: black; }
 
-@media (max-width: 1024px){
-    .activite__cards{
+.link {
+    color: black;
+}
+
+@media (max-width: 1024px) {
+    .activite__cards {
         height: 270px;
     }
-    .activity-thumb{
+
+    .activity-thumb {
         height: 75%;
     }
-    
+
 }
-@media (max-width: 767.98px){
-    .cards-activity-content{
+
+@media (max-width: 767.98px) {
+    .cards-activity-content {
         flex-direction: column;
     }
-    .activite__cards{
+
+    .activite__cards {
         width: 100%;
     }
-    .body-activity{
+
+    .body-activity {
         margin: 20px 0 0 30px;
     }
 }
+
 /*-----FOOTER-----*/
 footer {
     padding-top: 2%;
+    padding-left: 2em;
+    background-color: #d9d9d9;
 }
 
 .footer_body {
     display: flex;
     align-items: flex-start;
-    background-color: #d9d9d9;
+
 }
 
 .list {
@@ -650,11 +673,17 @@ footer {
 .list-title>h3 {
     margin: 1.5% 0% 1.5% 0%;
 }
-@media (max-width: 767.98px){
-    .footer_body{
+
+@media (max-width: 767.98px) {
+    .footer_body {
         flex-direction: column;
     }
-    .list{
+
+    .list {
         width: 100%;
+    }
+
+    footer ul {
+        padding: 0;
     }
 }
